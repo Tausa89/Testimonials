@@ -1,0 +1,167 @@
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+.a {
+  color: hsl(228, 45%, 44%);
+}
+
+.box-one {
+  background-color: #733fc7;
+  grid-area: one;
+  padding: 35px;
+  position: relative;
+  z-index: 0;
+}
+
+.quotation {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 140px;
+  width: 130px;
+  z-index: -1;
+}
+
+.box-two {
+  background-color: #48556a;
+  grid-area: two;
+  padding: 35px;
+}
+
+.box-three {
+  background-color: #ffffff;
+  grid-area: three;
+  padding: 35px;
+}
+
+.box-four {
+  background-color: #19202e;
+  grid-area: four;
+  padding: 35px;
+}
+
+.box-five {
+  background-color: #ffffff;
+  grid-area: five;
+  padding: 35px;
+}
+
+.grid-wrapper {
+  margin: 100px 200px 100px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  grid-template-areas:
+    "one one two five"
+    "three four four five";
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .grid-wrapper {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+}
+
+.profile-picture {
+  border-radius: 50%;
+  float: left;
+  margin-right: 25px;
+  width: 45px;
+}
+
+.first {
+  border: 3px solid #a875eb;
+}
+
+.second {
+  border: 3px solid #733fc7;
+}
+
+.boxes-border {
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #f0f4f4;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  color: #a9a9a9;
+}
+
+.dark-box-paragraph {
+  color: #d0d0d0;
+}
+
+.white-box-paragraph {
+  color: #787878;
+}
+
+h2 {
+  margin: 25px 0px 30px 0px;
+}
+
+h4 {
+  color: #a9a9a9;
+  font-weight: normal;
+}
+
+.dark-box-header {
+  color: #e8e8e8;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.white-box-header {
+  color: #505050;
+  line-height: 1.2;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
